@@ -1,0 +1,4 @@
+#Tue Apr 17 12:41:11 BST 2018
+base.0=C\:\\Users\\wojtek\\Desktop\\Hashiwokakero-master1\\Hashi_Bridges\\build\\intermediates\\transforms\\dexMerger\\debug\\5
+path.0=classes.dex
+renamed.0=classes.dex

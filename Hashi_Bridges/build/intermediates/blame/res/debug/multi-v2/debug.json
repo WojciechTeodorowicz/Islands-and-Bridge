@@ -1,0 +1,115 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\wojtek\\Desktop\\Hashiwokakero-master1\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\wojtek\\Desktop\\Hashiwokakero-master1\\Hashi_Bridges\\src\\main\\res\\values\\arrays.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "11",
+                        "endOffsets": "208"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\wojtek\\Desktop\\Hashiwokakero-master1\\Hashi_Bridges\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "3,-1",
+                        "startColumns": "0,-1",
+                        "startOffsets": "93,-1",
+                        "endColumns": "40,-1",
+                        "endOffsets": "133,-1"
+                    },
+                    "to": {
+                        "startLines": "7,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "213,258",
+                        "endColumns": "44,45",
+                        "endOffsets": "253,299"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\wojtek\\Desktop\\Hashiwokakero-master1\\Hashi_Bridges\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "304,350,394,446,490,534,580,624,672,724",
+                        "endColumns": "45,43,51,43,43,45,43,47,51,53",
+                        "endOffsets": "345,389,441,485,529,575,619,667,719,773"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "C:\\Users\\i514\\Desktop\\Hashiwokakero-master1\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\i514\\Desktop\\Hashiwokakero-master1\\Hashi_Bridges\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "7,2,5,11,8,3,13,12,6,10",
+                        "startColumns": "3,4,3,3,3,4,3,3,3,3",
+                        "startOffsets": "263,55,161,405,308,99,495,448,212,352",
+                        "endColumns": "44,43,50,42,42,45,42,46,50,52",
+                        "endOffsets": "304,94,208,444,347,140,534,491,259,401"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "306,352,396,448,492,536,582,626,674,726",
+                        "endColumns": "45,43,51,43,43,45,43,47,51,53",
+                        "endOffsets": "347,391,443,487,531,577,621,669,721,775"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\i514\\Desktop\\Hashiwokakero-master1\\Hashi_Bridges\\src\\main\\res\\values\\arrays.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "3",
+                        "startOffsets": "54",
+                        "endLines": "6",
+                        "endColumns": "11",
+                        "endOffsets": "207"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "11",
+                        "endOffsets": "208"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\i514\\Desktop\\Hashiwokakero-master1\\Hashi_Bridges\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "3,2",
+                        "startColumns": "0,0",
+                        "startOffsets": "93,51",
+                        "endColumns": "42,41",
+                        "endOffsets": "135,92"
+                    },
+                    "to": {
+                        "startLines": "7,8",
+                        "startColumns": "4,4",
+                        "startOffsets": "213,260",
+                        "endColumns": "46,45",
+                        "endOffsets": "255,301"
+                    }
+                }
+            ]
+        }
+    ]
+}

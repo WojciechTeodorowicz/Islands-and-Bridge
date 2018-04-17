@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="difficulty">
+      <item>@string/easy_label</item>
+      <item>@string/medium_label</item>
+      <item>@string/hard_label</item>
+   </array>
+    <color name="background">#00C322</color>
+    <color name="lightgray">#FFc0c0c0</color>
+    <string name="about_label">About</string>
+    <string name="app_name">Hashi0</string>
+    <string name="continue_label">Continue</string>
+    <string name="easy_label">Easy</string>
+    <string name="exit_label">Exit</string>
+    <string name="game_title">Hashi0</string>
+    <string name="hard_label">Hard</string>
+    <string name="medium_label">Medium</string>
+    <string name="new_game_label">New Game</string>
+    <string name="new_game_title">Difficulty</string>
+</resources>
