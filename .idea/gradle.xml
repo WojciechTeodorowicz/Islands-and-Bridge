@@ -9,6 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Hashi_Bridges" />
+            <option value="$PROJECT_DIR$/aws-android-sdk-cognito-2.6.18" />
+            <option value="$PROJECT_DIR$/aws-android-sdk-mobile-client-2.6.18" />
+            <option value="$PROJECT_DIR$/aws-android-sdk-mobileanalytics-2.6.18" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

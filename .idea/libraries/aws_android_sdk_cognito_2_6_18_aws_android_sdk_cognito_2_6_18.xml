@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="aws-android-sdk-cognito-2.6.18.aws-android-sdk-cognito-2.6.18">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/aws-android-sdk-cognito-2.6.18/aws-android-sdk-cognito-2.6.18.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

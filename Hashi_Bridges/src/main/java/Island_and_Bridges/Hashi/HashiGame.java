@@ -3,26 +3,33 @@
  */
 package Island_and_Bridges.Hashi;
 
-
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.LinearLayout;
-import android.os.Handler;
-import android.os.Message;
+import android.widget.TextView;
 
-import java.text.*;
-import java.util.*;
+import com.amazonaws.mobile.client.AWSMobileClient;
+import com.amazonaws.mobile.client.AWSStartupHandler;
+import com.amazonaws.mobile.client.AWSStartupResult;
+
+import java.text.DecimalFormat;
+import java.text.FieldPosition;
+import java.text.NumberFormat;
+import java.util.Locale;
+import java.util.TimerTask;
 
 /**
  * @author ghb
  *
  */
 public class HashiGame extends Activity implements OnClickListener {
+
 
   public static final String KEY_DIFFICULTY =
     "de.Hashi.difficulty";
@@ -31,7 +38,6 @@ public class HashiGame extends Activity implements OnClickListener {
   public static final int RESTART = 1;
   public static final int EXIT = 2;
   public static final int TIME = 3;
-
   public static final int DIFFICULTY_EASY = 0;
   public static final int DIFFICULTY_MEDIUM = 1;
   public static final int DIFFICULTY_HARD = 2;
@@ -66,6 +72,12 @@ public class HashiGame extends Activity implements OnClickListener {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+      AWSMobileClient.getInstance().initialize(this, new AWSStartupHandler() {
+          @Override
+          public void onComplete(AWSStartupResult awsStartupResult) {
+              Log.d("YourMainActivity", "AWSMobileClient is instantiated and you are connected to AWS!");
+          }
+      }).execute();
     ResetGameState(true);
 
     view = new MapView(this, boardstate);
@@ -76,7 +88,7 @@ public class HashiGame extends Activity implements OnClickListener {
     LinearLayout lheader = new LinearLayout(this);
     lheader.setOrientation(LinearLayout.HORIZONTAL);
 
-    TextView  time = new TextView(this);
+    TextView time = new TextView(this);
     time.setId(TIME);
     lheader.addView(time);
 
@@ -97,9 +109,12 @@ public class HashiGame extends Activity implements OnClickListener {
     // Add the ImageView to the layout and set the layout as the content view
     setContentView(l);
 
-gametimer.schedule(new TimerTask() { public void run() {
-	seconds+=0.1; hRefresh.sendEmptyMessage(0);
-	} }, 100, 100);
+    gametimer.schedule(new TimerTask() {
+      public void run() {
+        seconds += 0.1;
+        hRefresh.sendEmptyMessage(0);
+      }
+    }, 100, 100);
 
     view.requestFocus();
   }
