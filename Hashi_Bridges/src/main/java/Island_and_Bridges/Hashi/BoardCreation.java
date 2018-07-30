@@ -58,12 +58,12 @@ public class BoardCreation {
     public State CloneWithoutConnections() {
       State newstate = new State(board_width);
       if (board_elements != null) {
-	newstate.board_elements = new BoardElement[board_elements.length][board_elements.length];
-	for (int i = 0; i < board_elements.length; ++i) {
-	  for (int j = 0; j < board_elements.length; ++j) {
-	    if (board_elements[i][j] == null)
-              continue;
-	    newstate.board_elements[i][j] = board_elements[i][j].clone();
+        newstate.board_elements = new BoardElement[board_elements.length][board_elements.length];
+        for (int i = 0; i < board_elements.length; ++i) {
+          for (int j = 0; j < board_elements.length; ++j) {
+            if (board_elements[i][j] == null)
+                  continue;
+            newstate.board_elements[i][j] = board_elements[i][j].clone();
 	  }
 	}
       }
@@ -92,12 +92,13 @@ public class BoardCreation {
       if (first.row == second.row) {
 	for (int i = (int) (first.col + Math.signum(dcol)); i != second.col; i += Math.signum(dcol)) {
 	  cell_occupied[first.row][i] = fingerprint;
-        String.format("deleting bridge");
+
 	}
       } else {
 	assert first.col == second.col;
 	for (int i = (int) (first.row + Math.signum(drow)); i != second.row; i+= Math.signum(drow)) {
 	  cell_occupied[i][first.col] = fingerprint;
+
 
 	}
       }
@@ -105,8 +106,9 @@ public class BoardCreation {
   } // end of state
 
   private State current_state, old_state;
-
-  static private final int WIDTH_EASY = 7;
+  static private final int WIDTH_HARD = 10;
+  static private final int WIDTH_MEDIUM = 7;
+  static private final int WIDTH_EASY = 4;
 
   private void NewGame(int hardness) {
     switch(hardness) {
@@ -116,6 +118,20 @@ public class BoardCreation {
 	old_state = getCurrentState().CloneWithoutConnections();
 	break;
     }
+    switch(hardness) {
+          case MEDIUM:
+              Log.d(getClass().getName(), "Initializing new Medium game");
+              InitializeMedium();
+              old_state = getCurrentState().CloneWithoutConnections();
+              break;
+      }
+      switch(hardness) {
+          case HARD:
+              Log.d(getClass().getName(), "Initializing new Hard game");
+              InitializeHard();
+              old_state = getCurrentState().CloneWithoutConnections();
+              break;
+      }
   }
 
   public void ResetGame() {
@@ -128,7 +144,8 @@ public class BoardCreation {
   }
 
   public BoardCreation(int hardness) {
-    NewGame(hardness);
+
+      NewGame(hardness);
   }
 
   public boolean TryAddNewBridge(BoardElement start, BoardElement end, int count) {
@@ -160,7 +177,7 @@ public class BoardCreation {
 
     if (count_start  + count > start.max_connecting_bridges ||
 	count_end + count > end.max_connecting_bridges) {
-      Log.d(getClass().getName(), "This Bridge is not allowed");
+      Log.d(getClass().getName(), "Sums on start or end would be too large.");
       return false;
     }
 
@@ -239,7 +256,7 @@ public class BoardCreation {
   private void InitializeEasy() {
       Random rand = new Random();
 
-      String[][] debug_board_state = new String[7][7];
+      String[][] debug_board_state = new String[4][4];
       setCurrentState(new State(WIDTH_EASY));
       for (int row = 0; row < debug_board_state.length; row++) {
           for (int column = 0; column < debug_board_state[row].length; column++) {
@@ -256,7 +273,6 @@ public class BoardCreation {
       }
       for (int row = 0; row < WIDTH_EASY; ++row) {
           for (int column = 0; column < WIDTH_EASY; ++column) {
-
                   getCurrentState().board_elements[row][column] = new BoardElement();
                   getCurrentState().board_elements[row][column].max_connecting_bridges = Integer.parseInt(debug_board_state[row][column]);
                   getCurrentState().board_elements[row][column].row = row;
@@ -268,7 +284,68 @@ public class BoardCreation {
               }
           }
       }
+    private void InitializeMedium() {
+        Random rand = new Random();
 
+        String[][] debug_board_state = new String[7][7];
+        setCurrentState(new State(WIDTH_MEDIUM));
+        for (int row = 0; row < debug_board_state.length; row++) {
+            for (int column = 0; column < debug_board_state[row].length; column++) {
+                debug_board_state[row][column] = String.valueOf(rand.nextInt(5));
+
+            }
+        }
+
+        for (int row = 0; row < debug_board_state.length; row++) {
+            for (int column = 0; column < debug_board_state[row].length; column++) {
+                System.out.print(debug_board_state[row][column] + " ");
+            }
+            System.out.println();
+        }
+        for (int row = 0; row < WIDTH_MEDIUM; ++row) {
+            for (int column = 0; column < WIDTH_MEDIUM; ++column) {
+                getCurrentState().board_elements[row][column] = new BoardElement();
+                getCurrentState().board_elements[row][column].max_connecting_bridges = Integer.parseInt(debug_board_state[row][column]);
+                getCurrentState().board_elements[row][column].row = row;
+                getCurrentState().board_elements[row][column].col = column;
+
+                if (getCurrentState().board_elements[row][column].max_connecting_bridges > 0) {
+                    getCurrentState().board_elements[row][column].is_island = true;
+                }
+            }
+        }
+    }
+    private void InitializeHard() {
+        Random rand = new Random();
+
+        String[][] debug_board_state = new String[10][10];
+        setCurrentState(new State(WIDTH_HARD));
+        for (int row = 0; row < debug_board_state.length; row++) {
+            for (int column = 0; column < debug_board_state[row].length; column++) {
+                debug_board_state[row][column] = String.valueOf(rand.nextInt(5));
+
+            }
+        }
+
+        for (int row = 0; row < debug_board_state.length; row++) {
+            for (int column = 0; column < debug_board_state[row].length; column++) {
+                System.out.print(debug_board_state[row][column] + " ");
+            }
+            System.out.println();
+        }
+        for (int row = 0; row < WIDTH_HARD; ++row) {
+            for (int column = 0; column < WIDTH_HARD; ++column) {
+                getCurrentState().board_elements[row][column] = new BoardElement();
+                getCurrentState().board_elements[row][column].max_connecting_bridges = Integer.parseInt(debug_board_state[row][column]);
+                getCurrentState().board_elements[row][column].row = row;
+                getCurrentState().board_elements[row][column].col = column;
+
+                if (getCurrentState().board_elements[row][column].max_connecting_bridges > 0) {
+                    getCurrentState().board_elements[row][column].is_island = true;
+                }
+            }
+        }
+    }
 
 
   private void setCurrentState(State new_state) {

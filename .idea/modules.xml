@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Hashi_Bridges/Hashi_Bridges.iml" filepath="$PROJECT_DIR$/Hashi_Bridges/Hashi_Bridges.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Hashiwokakero-master1.iml" filepath="$PROJECT_DIR$/Hashiwokakero-master1.iml" />
-      <module fileurl="file://C:\Users\i514\Desktop\Hashiwokakero-master1\Hashi_Bridges\app.iml" filepath="C:\Users\i514\Desktop\Hashiwokakero-master1\Hashi_Bridges\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Islands-and-Bridge.iml" filepath="$PROJECT_DIR$/Islands-and-Bridge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aws-android-sdk-cognito-2.6.18/aws-android-sdk-cognito-2.6.18.iml" filepath="$PROJECT_DIR$/aws-android-sdk-cognito-2.6.18/aws-android-sdk-cognito-2.6.18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aws-android-sdk-mobile-client-2.6.18/aws-android-sdk-mobile-client-2.6.18.iml" filepath="$PROJECT_DIR$/aws-android-sdk-mobile-client-2.6.18/aws-android-sdk-mobile-client-2.6.18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aws-android-sdk-mobileanalytics-2.6.18/aws-android-sdk-mobileanalytics-2.6.18.iml" filepath="$PROJECT_DIR$/aws-android-sdk-mobileanalytics-2.6.18/aws-android-sdk-mobileanalytics-2.6.18.iml" />
     </modules>
   </component>
 </project>

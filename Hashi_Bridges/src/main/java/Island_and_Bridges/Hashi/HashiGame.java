@@ -14,9 +14,9 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.amazonaws.mobile.client.AWSMobileClient;
-import com.amazonaws.mobile.client.AWSStartupHandler;
-import com.amazonaws.mobile.client.AWSStartupResult;
+//import com.amazonaws.mobile.client.AWSMobileClient;
+//import com.amazonaws.mobile.client.AWSStartupHandler;
+//import com.amazonaws.mobile.client.AWSStartupResult;
 
 import java.text.DecimalFormat;
 import java.text.FieldPosition;
@@ -64,6 +64,7 @@ public class HashiGame extends Activity implements OnClickListener {
     }
   }
 
+
   @Override
   public Object onRetainNonConfigurationInstance() {
       return boardstate;
@@ -72,12 +73,13 @@ public class HashiGame extends Activity implements OnClickListener {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-      AWSMobileClient.getInstance().initialize(this, new AWSStartupHandler() {
-          @Override
-          public void onComplete(AWSStartupResult awsStartupResult) {
-              Log.d("YourMainActivity", "AWSMobileClient is instantiated and you are connected to AWS!");
-          }
-      }).execute();
+    //TODO connect to AWS mobile for online leaderboard
+      //AWSMobileClient.getInstance().initialize(this, new AWSStartupHandler() {
+        //  @Override
+          //public void onComplete(AWSStartupResult awsStartupResult) {
+            //  Log.d("YourMainActivity", "AWSMobileClient is instantiated and you are connected to AWS!");
+          //}
+      //}).execute();
     ResetGameState(true);
 
     view = new MapView(this, boardstate);

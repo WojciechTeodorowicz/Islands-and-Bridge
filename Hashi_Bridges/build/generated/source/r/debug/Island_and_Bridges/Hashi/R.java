@@ -13,7 +13,9 @@ public final class R {
   }
   public static final class color {
     public static final int background=0x7f020000;
-    public static final int lightgray=0x7f020001;
+    public static final int buttonbg=0x7f020001;
+    public static final int lightgray=0x7f020002;
+    public static final int tvcolor=0x7f020003;
   }
   public static final class drawable {
     public static final int greenicon=0x7f030000;
@@ -25,10 +27,12 @@ public final class R {
     public static final int continue_button=0x7f040001;
     public static final int exit_button=0x7f040002;
     public static final int new_button=0x7f040003;
-    public static final int widget30=0x7f040004;
+    public static final int text=0x7f040004;
+    public static final int widget30=0x7f040005;
   }
   public static final class layout {
-    public static final int main=0x7f050000;
+    public static final int about=0x7f050000;
+    public static final int main=0x7f050001;
   }
   public static final class string {
     public static final int about_label=0x7f060000;

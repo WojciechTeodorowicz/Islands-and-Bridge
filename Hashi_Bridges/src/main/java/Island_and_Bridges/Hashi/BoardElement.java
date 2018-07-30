@@ -13,12 +13,15 @@ public class BoardElement {
   public int row = 0;
   public int col = 0;
 
-  // Island?
+  // Is this an island?
   public boolean is_island = false;
 
-//Island Memebers
+  // *********************************************************
+  // *********************************************************
+  // Island specific members.
+  // *********************************************************
+  // *********************************************************
   public int max_connecting_bridges = 0;
-  public int column = 0;
 
   // It is easier to refer to neighbours via directions.
   public enum Direction {
@@ -35,7 +38,7 @@ public class BoardElement {
     BoardElement elt = new BoardElement();
     elt.row = row;
     elt.col = col;
-    Log.i("BoardElemnet", "Cloning " + "row " + elt.row + " " + "column " + elt.col);
+    Log.i("BoardElemnet", "Cloning" + elt.row + " " + elt.col);
 
     elt.max_connecting_bridges = max_connecting_bridges;
     elt.is_island = is_island;
@@ -66,7 +69,7 @@ public class BoardElement {
     if (connection == null) {
       return 0;
     } else {
-      return 1;
+      return connection.second;
     }
   }
 
@@ -87,19 +90,19 @@ public class BoardElement {
     Connection connection = null;
     switch (dir) {
       case EAST:
-        connecting_east = new Connection();
+        connecting_east = new Connection(dest, value);
         connection = connecting_east;
         break;
       case WEST:
-        connecting_west = new Connection();
+        connecting_west = new Connection(dest, value);
         connection = connecting_west;
         break;
       case SOUTH:
-        connecting_south = new Connection();
+        connecting_south = new Connection(dest, value);
         connection = connecting_south;
         break;
       case NORTH:
-        connecting_north = new Connection();
+        connecting_north = new Connection(dest, value);
         connection = connecting_north;
         break;
     }

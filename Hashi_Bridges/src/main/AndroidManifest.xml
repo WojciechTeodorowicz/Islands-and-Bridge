@@ -14,10 +14,16 @@
             </intent-filter>
         </activity>
 	<activity
-	      android:name="Island_and_Bridges.Hashi.HashiGame"
-	      android:label="@string/game_title"
-	      android:configChanges="keyboardHidden|orientation"
-	      android:screenOrientation="portrait" >
-	</activity>
+        android:name="Island_and_Bridges.Hashi.HashiGame"
+        android:label="@string/game_title"
+        android:configChanges="keyboardHidden|orientation"
+        android:screenOrientation="portrait" >
+    </activity>
+        <activity
+            android:name="Island_and_Bridges.Hashi.AboutActivity"
+            android:label="@string/game_title"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" >
+        </activity>
     </application>
 </manifest>

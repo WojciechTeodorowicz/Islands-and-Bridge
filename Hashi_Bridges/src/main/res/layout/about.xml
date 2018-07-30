@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/widget30"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@color/lightgray"
+android:gravity="center"
+android:orientation="vertical"
+android:padding="5px">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="542dp"
+        android:autoSizeTextType="uniform"
+
+        android:text="Welcome to Islands and Bridges, also known as Hashikakewero \n The rules of the game: \n Connect islands (the circles with numbers) with as many bridges as the number in the island.
+
+1.There can be no more than two bridges between two islands.\n
+
+2. Bridges cannot go across islands or other bridges.\n
+
+3. The bridges will form a continuous link between all the islands.\n
+
+4. You can use two bridges from one Island\n
+
+5. Have Fun!\n
+
+"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

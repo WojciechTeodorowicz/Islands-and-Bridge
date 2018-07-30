@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 /** Called when the activity is first created. */
 public class Hashi_Main extends Activity implements OnClickListener {
@@ -41,6 +43,9 @@ public class Hashi_Main extends Activity implements OnClickListener {
       case R.id.new_button:
 	NewGame();
 	break;
+	case R.id.about_button:
+	    About();
+	    break;
     }
   }
 
@@ -61,4 +66,10 @@ public class Hashi_Main extends Activity implements OnClickListener {
 	  })
     .show();
   }
+    public void About() {
+        Intent intent = new Intent(Hashi_Main.this, AboutActivity.class);
+        startActivity(intent);
+
+
+    }
 }

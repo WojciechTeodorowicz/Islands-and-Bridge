@@ -21,6 +21,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="aws-android-sdk-mobileanalytics-2.6.18.aws-android-sdk-mobileanalytics-2.6.18" level="project" />
   </component>
 </module>

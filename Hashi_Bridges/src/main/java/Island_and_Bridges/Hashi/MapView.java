@@ -188,7 +188,7 @@ public class MapView extends View {
 	canvas.drawLine(startX, startY + linewidth + 2, endX, endY + linewidth + 2, bridge_paint);
       } else {
 	canvas.drawLine(startX - linewidth - 2, startY, endX - linewidth - 2, endY, bridge_paint);
-	canvas.drawLine(startX + linewidth + 2, startY, endX + linewidth +2, endY, bridge_paint);
+	canvas.drawLine(startX + linewidth + 2, startY, endX + linewidth + 2, endY, bridge_paint);
        bridges = 1;
       }
     }

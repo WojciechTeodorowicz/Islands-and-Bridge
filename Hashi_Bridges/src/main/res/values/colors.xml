@@ -2,5 +2,7 @@
 <resources>
 <color name="lightgray">#FFc0c0c0</color>
 <color name="background">#00C322</color>
+    <color name="tvcolor">#ffffff</color>
+    <color name="buttonbg">#4CABFF</color>
 </resources>
 
