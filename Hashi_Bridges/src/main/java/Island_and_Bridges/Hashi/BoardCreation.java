@@ -1,29 +1,33 @@
-// The purpose of this class is to model the state of the hashi board.
-// It can initialize the state given on size and difficulty level
-// and provides functionality to check whether the state is valid or not.
+
 
 package Island_and_Bridges.Hashi;
 
 import android.annotation.TargetApi;
+import android.graphics.Path;
+import android.graphics.Point;
 import android.os.Build;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Random;
+import java.util.Stack;
 
 import static junit.framework.Assert.*;
 //This class Creates the map by random using a 2d array
+// the user can choose bettween 3 diffrent levels
 
 public class BoardCreation {
   // This class member is used for random initialization purposes.
   static private final Random random = new Random();
-
+  public int[][] debug_board_state_easy = new int[4][4];
   // The difficulty levels.
   private static final int EASY = 0;
   static public final int MEDIUM = 1;
   static public final int HARD = 2;
-
   static public final int EMPTY = 0;
-
   private static int ConnectionFingerprint(BoardElement start, BoardElement end) {
     int x = start.row * 100 + start.col;
     int y = end.row * 100 + end.col;
@@ -36,6 +40,7 @@ public class BoardCreation {
     }
     Log.d("", String.format("%d %d" , x ,y));
     return x ^ y;
+
   }
 
   public class State {
@@ -251,47 +256,65 @@ public class BoardCreation {
     if (connection!= null) { return connection; }
     return new Connection();
   }
+    private boolean withinGrid(int colNum, int rowNum) {
 
+        if((colNum < 0) || (rowNum <0) ) {
+            return false;    //false if row or col are negative
+        }
+        if((colNum >= 10) || (rowNum >= 10)) {
+            return false;    //false if row or col are > 75
+        }
+        return true;
+    }
+    //TODO: DFS ALGORITHM TO CHECK CONNECTIONS PROBABLY USING A STACK
   @TargetApi(Build.VERSION_CODES.N)
   private void InitializeEasy() {
       Random rand = new Random();
 
-      String[][] debug_board_state = new String[4][4];
       setCurrentState(new State(WIDTH_EASY));
-      for (int row = 0; row < debug_board_state.length; row++) {
-          for (int column = 0; column < debug_board_state[row].length; column++) {
-              debug_board_state[row][column] = String.valueOf(rand.nextInt(5));
+      for (int row = 0; row < debug_board_state_easy.length; row++) {
+          for (int column = 0; column < debug_board_state_easy[row].length; column++) {
+              debug_board_state_easy[row][column] = Integer.valueOf(rand.nextInt(5));
 
           }
+
       }
 
-      for (int row = 0; row < debug_board_state.length; row++) {
-          for (int column = 0; column < debug_board_state[row].length; column++) {
-              System.out.print(debug_board_state[row][column] + " ");
+
+      for (int row = 0; row < debug_board_state_easy.length; row++) {
+          for (int column = 0; column < debug_board_state_easy[row].length; column++) {
+              System.out.print(debug_board_state_easy[row][column] + " ");
           }
-          System.out.println();
+            System.out.println(debug_board_state_easy);
+            this.search();
       }
+      this.search();
       for (int row = 0; row < WIDTH_EASY; ++row) {
           for (int column = 0; column < WIDTH_EASY; ++column) {
+//                  System.out.println();
+
                   getCurrentState().board_elements[row][column] = new BoardElement();
-                  getCurrentState().board_elements[row][column].max_connecting_bridges = Integer.parseInt(debug_board_state[row][column]);
+                  getCurrentState().board_elements[row][column].max_connecting_bridges = Integer.valueOf(debug_board_state_easy[row][column]);
                   getCurrentState().board_elements[row][column].row = row;
                   getCurrentState().board_elements[row][column].col = column;
 
                   if (getCurrentState().board_elements[row][column].max_connecting_bridges > 0) {
                       getCurrentState().board_elements[row][column].is_island = true;
                   }
-              }
+
           }
       }
+  }
+
     private void InitializeMedium() {
         Random rand = new Random();
-
         String[][] debug_board_state = new String[7][7];
+        boolean[][] visited = new boolean[debug_board_state.length][debug_board_state[0].length];
         setCurrentState(new State(WIDTH_MEDIUM));
         for (int row = 0; row < debug_board_state.length; row++) {
             for (int column = 0; column < debug_board_state[row].length; column++) {
                 debug_board_state[row][column] = String.valueOf(rand.nextInt(5));
+
 
             }
         }
@@ -301,6 +324,7 @@ public class BoardCreation {
                 System.out.print(debug_board_state[row][column] + " ");
             }
             System.out.println();
+
         }
         for (int row = 0; row < WIDTH_MEDIUM; ++row) {
             for (int column = 0; column < WIDTH_MEDIUM; ++column) {
@@ -332,6 +356,7 @@ public class BoardCreation {
                 System.out.print(debug_board_state[row][column] + " ");
             }
             System.out.println();
+
         }
         for (int row = 0; row < WIDTH_HARD; ++row) {
             for (int column = 0; column < WIDTH_HARD; ++column) {
@@ -346,7 +371,64 @@ public class BoardCreation {
             }
         }
     }
+    void search() {
 
+        Map<Point, List<Path.Direction>> remainingOptions = new HashMap<>();
+
+        Stack<Land> gameTree = new Stack<>();
+        gameTree.push(new Land(debug_board_state_easy));
+
+        while (true) {
+
+            Land state = gameTree.peek();
+            int[] p = state.lowestTodo();
+            if (p == null)
+                System.out.println("solution found");
+
+            // move to next game state
+            int r = p[0];
+            int c = p[1];
+            System.out.println("expanding game state for node at (" + r + ", " + c + ")");
+
+            List<Path.Direction> ds = null;
+            if (remainingOptions.containsKey(new Point(r, c)))
+                ds = remainingOptions.get(new Point(r, c));
+            else {
+                ds = new ArrayList<>();
+                for (Path.Direction dir : Path.Direction.values()) {
+                    int[] tmp = state.nextIsland(r, c, dir);
+                    if (tmp == null)
+                        continue;
+                    if (state.canBuildBridge(r, c, tmp[0], tmp[1]))
+                        ds.add(dir);
+                }
+                remainingOptions.put(new Point(r, c), ds);
+            }
+
+            // if the node can no longer be expanded, and backtracking is not possible we quit
+            if (ds.isEmpty() && gameTree.isEmpty()) {
+                System.out.println("no valid configuration found");
+                return;
+            }
+
+            // if the node can no longer be expanded, we need to backtrack
+            if (ds.isEmpty()) {
+                gameTree.pop();
+                remainingOptions.remove(new Point(r, c));
+                System.out.println("going back to previous decision");
+                continue;
+            }
+
+            Path.Direction dir = ds.remove(0);
+            System.out.println("connecting " + dir.name());
+            remainingOptions.put(new Point(r, c), ds);
+
+            Land nextState = new Land(state);
+            int[] tmp = state.nextIsland(r, c, dir);
+            nextState.connect(r, c, tmp[0], tmp[1]);
+            gameTree.push(nextState);
+        }
+    }
 
   private void setCurrentState(State new_state) {
     this.current_state = new_state;

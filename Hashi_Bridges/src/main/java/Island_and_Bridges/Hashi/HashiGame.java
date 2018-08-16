@@ -136,7 +136,7 @@ public class HashiGame extends Activity implements OnClickListener {
     StringBuffer strBuf = new StringBuffer();
     String str = new String();
     DecimalFormat decForm =
-      (DecimalFormat) NumberFormat.getInstance(Locale.ITALIAN);
+      (DecimalFormat) NumberFormat.getInstance(Locale.ENGLISH);
     FieldPosition intPos = new FieldPosition(DecimalFormat.INTEGER_FIELD);
     decForm.setMinimumFractionDigits(precision);
     decForm.setMaximumFractionDigits(precision);

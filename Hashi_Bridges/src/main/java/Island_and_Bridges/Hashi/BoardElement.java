@@ -38,7 +38,7 @@ public class BoardElement {
     BoardElement elt = new BoardElement();
     elt.row = row;
     elt.col = col;
-    Log.i("BoardElemnet", "Cloning" + elt.row + " " + elt.col);
+    Log.i("BoardElemnet", "Cloning " + elt.row + " " + elt.col);
 
     elt.max_connecting_bridges = max_connecting_bridges;
     elt.is_island = is_island;
@@ -84,7 +84,7 @@ public class BoardElement {
     s += GetConnectionCount(connecting_north);
     s += GetConnectionCount(connecting_west);
     return s;
-  }
+}
 
   void AddConnection(Direction dir, BoardElement dest, int value) {
     Connection connection = null;

@@ -6,9 +6,12 @@
                 {
                     "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\values\\arrays.xml",
                     "from": {
-                        "startLines": "-1",
-                        "startColumns": "-1",
-                        "startOffsets": "-1"
+                        "startLines": "2",
+                        "startColumns": "3",
+                        "startOffsets": "56",
+                        "endLines": "6",
+                        "endColumns": "11",
+                        "endOffsets": "213"
                     },
                     "to": {
                         "startLines": "2",
@@ -22,11 +25,11 @@
                 {
                     "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "3,5,2,-1",
-                        "startColumns": "0,4,0,-1",
-                        "startOffsets": "96,185,53,-1",
-                        "endColumns": "40,42,41,-1",
-                        "endOffsets": "136,223,94,-1"
+                        "startLines": "3,5,2,4",
+                        "startColumns": "0,4,0,4",
+                        "startOffsets": "96,185,53,142",
+                        "endColumns": "40,42,41,41",
+                        "endOffsets": "136,223,94,179"
                     },
                     "to": {
                         "startLines": "7,8,9,10",
@@ -39,9 +42,11 @@
                 {
                     "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\values\\strings.xml",
                     "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                        "startLines": "7,2,5,11,8,3,13,12,6,10",
+                        "startColumns": "3,4,3,3,3,4,3,3,3,3",
+                        "startOffsets": "345,106,241,491,391,164,594,541,293,437",
+                        "endColumns": "44,56,50,48,42,58,49,51,50,52",
+                        "endOffsets": "386,158,288,536,430,218,640,589,340,486"
                     },
                     "to": {
                         "startLines": "11,12,13,14,15,16,17,18,19,20",
