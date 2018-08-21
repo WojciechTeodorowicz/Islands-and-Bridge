@@ -22,7 +22,7 @@ import static junit.framework.Assert.*;
 public class BoardCreation {
   // This class member is used for random initialization purposes.
   static private final Random random = new Random();
-  public int[][] debug_board_state_easy = new int[4][4];
+  public int[][] debug_board_state_easy = new int[6][6];
   // The difficulty levels.
   private static final int EASY = 0;
   static public final int MEDIUM = 1;
@@ -285,13 +285,13 @@ public class BoardCreation {
           for (int column = 0; column < debug_board_state_easy[row].length; column++) {
               System.out.print(debug_board_state_easy[row][column] + " ");
           }
-            System.out.println(debug_board_state_easy);
-            this.search();
+            System.out.println();
+
       }
       this.search();
       for (int row = 0; row < WIDTH_EASY; ++row) {
           for (int column = 0; column < WIDTH_EASY; ++column) {
-//                  System.out.println();
+
 
                   getCurrentState().board_elements[row][column] = new BoardElement();
                   getCurrentState().board_elements[row][column].max_connecting_bridges = Integer.valueOf(debug_board_state_easy[row][column]);
@@ -304,6 +304,7 @@ public class BoardCreation {
 
           }
       }
+
   }
 
     private void InitializeMedium() {
@@ -390,7 +391,7 @@ public class BoardCreation {
             int c = p[1];
             System.out.println("expanding game state for node at (" + r + ", " + c + ")");
 
-            List<Path.Direction> ds = null;
+            List<Path.Direction> ds;
             if (remainingOptions.containsKey(new Point(r, c)))
                 ds = remainingOptions.get(new Point(r, c));
             else {
@@ -418,11 +419,10 @@ public class BoardCreation {
                 System.out.println("going back to previous decision");
                 continue;
             }
-
+            Log.e("gameTree", "WE ARE CRASHING HERE FUCK THIS SHIT");
             Path.Direction dir = ds.remove(0);
             System.out.println("connecting " + dir.name());
             remainingOptions.put(new Point(r, c), ds);
-
             Land nextState = new Land(state);
             int[] tmp = state.nextIsland(r, c, dir);
             nextState.connect(r, c, tmp[0], tmp[1]);

@@ -7,6 +7,9 @@ import android.os.Build;
 import java.util.Arrays;
 
 import static Island_and_Bridges.Hashi.BoardElement.*;
+import static Island_and_Bridges.Hashi.BoardElement.Direction.EAST;
+import static Island_and_Bridges.Hashi.BoardElement.Direction.NORTH;
+import static Island_and_Bridges.Hashi.BoardElement.Direction.SOUTH;
 import static android.graphics.Path.Direction.*;
 
 public class Land {
@@ -91,23 +94,24 @@ public class Land {
         if(c0 == c1 && r0 > r1){
             return canBuildBridge(r1, c0, r0, c1);
         }
-        if(r0 == r1){
-            int[] tmp = nextIsland(r0, c0, CW);
-            if(tmp[0] != r1 || tmp[1] != c1)
-                return false;
-            if(BRIDGES_TO_BUILD[r0][c0] == 0)
-                return false;
-            if(BRIDGES_TO_BUILD[r1][c1] == 0)
-                return false;
-            for (int i = c0; i <= c1 ; i++) {
-                if(IS_ISLAND[r0][i])
-                    continue;
-                if(BRIDGES_ALREADY_BUILT[r0][i] == Direction.NORTH)
+
+            if (r0 == r1) {
+                int[] tmp = nextIsland(r0, c0, CW);
+                if (tmp[0] != r1 || tmp[1] != c1)
                     return false;
+                if (BRIDGES_TO_BUILD[r0][c0] == 0)
+                    return false;
+                if (BRIDGES_TO_BUILD[r1][c1] == 0)
+                    return false;
+                for (int i = c0; i <= c1; i++) {
+                    if (IS_ISLAND[r0][i])
+                        continue;
+                    if (BRIDGES_ALREADY_BUILT[r0][i] == Direction.NORTH)
+                        return false;
+                }
             }
-        }
         if(c0 == c1){
-            int[] tmp = nextIsland(r0, c0, CCW);
+            int[] tmp = nextIsland(r0, c0, CW);
             if(tmp[0] != r1 || tmp[1] != c1)
                 return false;
             if(BRIDGES_TO_BUILD[r0][c0] == 0 || BRIDGES_TO_BUILD[r1][c1] == 0)
@@ -115,7 +119,7 @@ public class Land {
             for (int i = r0; i <= r1 ; i++) {
                 if(IS_ISLAND[i][c0])
                     continue;
-                if(BRIDGES_ALREADY_BUILT[i][c0] == Direction.SOUTH) {
+                if(BRIDGES_ALREADY_BUILT[i][c0] == EAST) {
                     return false;
                 }
             }
@@ -139,8 +143,8 @@ public class Land {
                     out = new int[]{i, j};
             }
         }
-        if (BRIDGES_TO_BUILD[out[0]][out[0]] == 0) {
-            return null;
+        if (BRIDGES_TO_BUILD[out[0]][out[1]] == 0) {
+                return null;
         }
         return out;
     }
