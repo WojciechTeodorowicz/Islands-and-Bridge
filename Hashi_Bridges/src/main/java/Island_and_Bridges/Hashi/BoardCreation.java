@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.Stack;
-
+import static Island_and_Bridges.Hashi.BoardElement.*;
 import static junit.framework.Assert.*;
 //This class Creates the map by random using a 2d array
 // the user can choose bettween 3 diffrent levels
@@ -22,7 +22,7 @@ import static junit.framework.Assert.*;
 public class BoardCreation {
   // This class member is used for random initialization purposes.
   static private final Random random = new Random();
-  public int[][] debug_board_state_easy = new int[6][6];
+  public int[][] debug_board_state_easy = new int[4][4];
   // The difficulty levels.
   private static final int EASY = 0;
   static public final int MEDIUM = 1;
@@ -374,7 +374,7 @@ public class BoardCreation {
     }
     void search() {
 
-        Map<Point, List<Path.Direction>> remainingOptions = new HashMap<>();
+        Map<Point, List<Direction>> remainingOptions = new HashMap<>();
 
         Stack<Land> gameTree = new Stack<>();
         gameTree.push(new Land(debug_board_state_easy));
@@ -391,12 +391,12 @@ public class BoardCreation {
             int c = p[1];
             System.out.println("expanding game state for node at (" + r + ", " + c + ")");
 
-            List<Path.Direction> ds;
+            List<Direction> ds;
             if (remainingOptions.containsKey(new Point(r, c)))
                 ds = remainingOptions.get(new Point(r, c));
             else {
                 ds = new ArrayList<>();
-                for (Path.Direction dir : Path.Direction.values()) {
+                for (Direction dir : Direction.values()) {
                     int[] tmp = state.nextIsland(r, c, dir);
                     if (tmp == null)
                         continue;
@@ -419,8 +419,8 @@ public class BoardCreation {
                 System.out.println("going back to previous decision");
                 continue;
             }
-            Log.e("gameTree", "WE ARE CRASHING HERE FUCK THIS SHIT");
-            Path.Direction dir = ds.remove(0);
+            Log.e("gameTree", "WE ARE CRASHING HERE");
+            Direction dir = ds.remove(0);
             System.out.println("connecting " + dir.name());
             remainingOptions.put(new Point(r, c), ds);
             Land nextState = new Land(state);

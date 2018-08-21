@@ -3,6 +3,7 @@ import  Island_and_Bridges.Hashi.BoardElement;
 import android.annotation.TargetApi;
 import android.graphics.Path;
 import android.os.Build;
+import android.util.Log;
 
 import java.util.Arrays;
 
@@ -48,7 +49,7 @@ public class Land {
         }
     }
 
-    public int[] next(int r, int c, Path.Direction dir){
+    public int[] next(int r, int c, Direction dir){
         int R = BRIDGES_TO_BUILD.length;
         int C = BRIDGES_TO_BUILD[0].length;
 
@@ -60,12 +61,11 @@ public class Land {
         // motion vectors
         int[][] motionVector = {{-1, 0},{0,1},{1,0},{0,-1}};
         int i = Arrays.asList(values()).indexOf(dir);
-
         // calculate next
+//         int[] out = new int[] {r + motionVector[i][0], c + motionVector[i][1]};
         int[] out = new int[]{r + motionVector[i][0], c + motionVector[i][1]};
 
-        r = out[0];
-        c = out[1];
+
 
         // out of bounds
         if(r < 0 || r >=R || c < 0 || c >= C)
@@ -75,7 +75,7 @@ public class Land {
         return out;
     }
 
-    public int[] nextIsland(int r, int c, Path.Direction dir){
+    public int[] nextIsland(int r, int c, Direction dir){
         int[] tmp = next(r,c,dir);
         if(tmp == null)
             return null;
@@ -96,7 +96,7 @@ public class Land {
         }
 
             if (r0 == r1) {
-                int[] tmp = nextIsland(r0, c0, CW);
+                int[] tmp = nextIsland(r0, c0, Direction.EAST);
                 if (tmp[0] != r1 || tmp[1] != c1)
                     return false;
                 if (BRIDGES_TO_BUILD[r0][c0] == 0)
@@ -111,7 +111,7 @@ public class Land {
                 }
             }
         if(c0 == c1){
-            int[] tmp = nextIsland(r0, c0, CW);
+            int[] tmp = nextIsland(r0, c0, Direction.SOUTH);
             if(tmp[0] != r1 || tmp[1] != c1)
                 return false;
             if(BRIDGES_TO_BUILD[r0][c0] == 0 || BRIDGES_TO_BUILD[r1][c1] == 0)
