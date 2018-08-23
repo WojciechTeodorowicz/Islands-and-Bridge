@@ -9,6 +9,7 @@ import android.os.Build;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.EmptyStackException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,6 +24,7 @@ public class BoardCreation {
   // This class member is used for random initialization purposes.
   static private final Random random = new Random();
   public int[][] debug_board_state_easy = new int[4][4];
+
   // The difficulty levels.
   private static final int EASY = 0;
   static public final int MEDIUM = 1;
@@ -281,6 +283,7 @@ public class BoardCreation {
       }
 
 
+
       for (int row = 0; row < debug_board_state_easy.length; row++) {
           for (int column = 0; column < debug_board_state_easy[row].length; column++) {
               System.out.print(debug_board_state_easy[row][column] + " ");
@@ -288,7 +291,7 @@ public class BoardCreation {
             System.out.println();
 
       }
-      this.search();
+    this.search();
       for (int row = 0; row < WIDTH_EASY; ++row) {
           for (int column = 0; column < WIDTH_EASY; ++column) {
 
@@ -372,64 +375,68 @@ public class BoardCreation {
             }
         }
     }
-    void search() {
+    void search(){
 
         Map<Point, List<Direction>> remainingOptions = new HashMap<>();
 
         Stack<Land> gameTree = new Stack<>();
         gameTree.push(new Land(debug_board_state_easy));
 
-        while (true) {
-
+        while(true){
+//            if(gameTree.size() == 0) {
+//                gameTree.push(new Land(debug_board_state_easy));
+//            }
             Land state = gameTree.peek();
+
             int[] p = state.lowestTodo();
             if (p == null)
                 System.out.println("solution found");
 
             // move to next game state
-            int r = p[0];
-            int c = p[1];
-            System.out.println("expanding game state for node at (" + r + ", " + c + ")");
+            int row = p[0];
+            int column = p[1];
+            System.out.println("expanding game state for node at (" + row + ", " + column + ")");
 
-            List<Direction> ds;
-            if (remainingOptions.containsKey(new Point(r, c)))
-                ds = remainingOptions.get(new Point(r, c));
-            else {
+            List<Direction> ds = null;
+            if(remainingOptions.containsKey(new Point(row,column)))
+                ds = remainingOptions.get(new Point(row,column));
+            else{
                 ds = new ArrayList<>();
-                for (Direction dir : Direction.values()) {
-                    int[] tmp = state.nextIsland(r, c, dir);
-                    if (tmp == null)
+                for(Direction dir : Direction.values()) {
+                    int[] tmp = state.nextIsland(row, column, dir);
+                    if(tmp == null)
                         continue;
-                    if (state.canBuildBridge(r, c, tmp[0], tmp[1]))
+                    if(state.canBuildBridge(row,column,tmp[0], tmp[1]))
                         ds.add(dir);
                 }
-                remainingOptions.put(new Point(r, c), ds);
+                remainingOptions.put(new Point(row,column), ds);
             }
 
             // if the node can no longer be expanded, and backtracking is not possible we quit
-            if (ds.isEmpty() && gameTree.isEmpty()) {
+            if(ds.isEmpty() && gameTree.isEmpty()){
                 System.out.println("no valid configuration found");
                 return;
             }
 
             // if the node can no longer be expanded, we need to backtrack
-            if (ds.isEmpty()) {
+            if(ds.isEmpty() || ds.size() == 1){
                 gameTree.pop();
-                remainingOptions.remove(new Point(r, c));
+                remainingOptions.remove(new Point(row,column));
                 System.out.println("going back to previous decision");
                 continue;
             }
-            Log.e("gameTree", "WE ARE CRASHING HERE");
-            Direction dir = ds.remove(0);
+            Direction dir = ds.remove(1);
             System.out.println("connecting " + dir.name());
-            remainingOptions.put(new Point(r, c), ds);
-            Land nextState = new Land(state);
-            int[] tmp = state.nextIsland(r, c, dir);
-            nextState.connect(r, c, tmp[0], tmp[1]);
-            gameTree.push(nextState);
-        }
-    }
+            remainingOptions.put(new Point(row,column), ds);
 
+            Land nextState = new Land(state);
+            int[] tmp = state.nextIsland(row,column,dir);
+            nextState.connect(row,column, tmp[0], tmp[1]);
+            gameTree.push(nextState);
+
+        }
+
+    }
   private void setCurrentState(State new_state) {
     this.current_state = new_state;
   }
