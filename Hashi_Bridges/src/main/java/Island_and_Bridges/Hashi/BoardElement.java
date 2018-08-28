@@ -2,109 +2,109 @@ package Island_and_Bridges.Hashi;
 
 import android.util.Log;
 
-//this class holds information about the grid
-public class BoardElement {
-  // *********************************************************
-  // *********************************************************
-  // General members
-  // *********************************************************
-  // *********************************************************
 
-  public int row = 0;
-  public int col = 0;
+  public class BoardElement {
+    // *********************************************************
+    // *********************************************************
+    // General members
+    // *********************************************************
+    // *********************************************************
 
-  // Is this an island?
-  public boolean is_island = false;
+    public int row = 0;
+    public int col = 0;
 
-  // *********************************************************
-  // *********************************************************
-  // Island specific members.
-  // *********************************************************
-  // *********************************************************
-  public int max_connecting_bridges = 0;
+    // Is this an island?
+    public boolean is_island = false;
 
-  // It is easier to refer to neighbours via directions.
-  public enum Direction {
-    EAST, SOUTH, WEST, NORTH;
-  }
+    // *********************************************************
+    // *********************************************************
+    // Island specific members.
+    // *********************************************************
+    // *********************************************************
+    public int max_connecting_bridges = 0;
 
-  // Pairs of a BoardElement and the number of connecting bridges
-  public Connection connecting_north = null;
-  public Connection connecting_south = null;
-  public Connection connecting_east = null;
-  public Connection connecting_west = null;
-
-  public BoardElement clone() {
-    BoardElement elt = new BoardElement();
-    elt.row = row;
-    elt.col = col;
-    Log.i("BoardElemnet", "Cloning " + elt.row + " " + elt.col);
-
-    elt.max_connecting_bridges = max_connecting_bridges;
-    elt.is_island = is_island;
-    if (connecting_east != null)
-      elt.connecting_east = new Connection();
-    else
-      elt.connecting_east = null;
-
-    if (connecting_north!= null)
-      elt.connecting_north = new Connection();
-    else
-      elt.connecting_north = null;
-
-    if (connecting_south!= null)
-      elt.connecting_south = new Connection();
-    else
-      elt.connecting_south = null;
-
-    if (connecting_west != null)
-      elt.connecting_west = new Connection();
-    else
-      elt.connecting_west = null;
-
-    return elt;
-  }
-
-  private int GetConnectionCount(Connection connection){
-    if (connection == null) {
-      return 0;
-    } else {
-      return connection.second;
+    // It is easier to refer to neighbours via directions.
+    public enum Direction {
+      EAST, SOUTH, WEST, NORTH;
     }
-  }
 
-  // Return the current count of connections connected
-  // to this island.
-  public int GetCurrentCount() {
-    if (!is_island) {
-      return 0;
-    }
-    int s = GetConnectionCount(connecting_east);
-    s += GetConnectionCount(connecting_south);
-    s += GetConnectionCount(connecting_north);
-    s += GetConnectionCount(connecting_west);
-    return s;
-}
+    // Pairs of a BoardElement and the number of connecting bridges
+    public Connection connecting_north = null;
+    public Connection connecting_south = null;
+    public Connection connecting_east = null;
+    public Connection connecting_west = null;
 
-  void AddConnection(Direction dir, BoardElement dest, int value) {
-    Connection connection = null;
-    switch (dir) {
-      case EAST:
-        connecting_east = new Connection(dest, value);
-        connection = connecting_east;
-        break;
-      case WEST:
-        connecting_west = new Connection(dest, value);
-        connection = connecting_west;
-        break;
-      case SOUTH:
-        connecting_south = new Connection(dest, value);
-        connection = connecting_south;
-        break;
-      case NORTH:
-        connecting_north = new Connection(dest, value);
-        connection = connecting_north;
-        break;
+    public BoardElement clone() {
+      BoardElement elt = new BoardElement();
+      elt.row = row;
+      elt.col = col;
+      Log.i("BoardElemnet", "Cloning" + elt.row + " " + elt.col);
+
+      elt.max_connecting_bridges = max_connecting_bridges;
+      elt.is_island = is_island;
+      if (connecting_east != null)
+        elt.connecting_east = new Connection();
+      else
+        elt.connecting_east = null;
+
+      if (connecting_north!= null)
+        elt.connecting_north = new Connection();
+      else
+        elt.connecting_north = null;
+
+      if (connecting_south!= null)
+        elt.connecting_south = new Connection();
+      else
+        elt.connecting_south = null;
+
+      if (connecting_west != null)
+        elt.connecting_west = new Connection();
+      else
+        elt.connecting_west = null;
+
+      return elt;
     }
-  }
-}; // BoardElement
+
+    private int GetConnectionCount(Connection connection){
+      if (connection == null) {
+        return 0;
+      } else {
+        return connection.second;
+      }
+    }
+
+    // Return the current count of connections connected
+    // to this island.
+    public int GetCurrentCount() {
+      if (!is_island) {
+        return 0;
+      }
+      int s = GetConnectionCount(connecting_east);
+      s += GetConnectionCount(connecting_south);
+      s += GetConnectionCount(connecting_north);
+      s += GetConnectionCount(connecting_west);
+      return s;
+    }
+
+    void AddConnection(Direction dir, BoardElement dest, int value) {
+      Connection connection = null;
+      switch (dir) {
+        case EAST:
+          connecting_east = new Connection(dest, value);
+          connection = connecting_east;
+          break;
+        case WEST:
+          connecting_west = new Connection(dest, value);
+          connection = connecting_west;
+          break;
+        case SOUTH:
+          connecting_south = new Connection(dest, value);
+          connection = connecting_south;
+          break;
+        case NORTH:
+          connecting_north = new Connection(dest, value);
+          connection = connecting_north;
+          break;
+      }
+    }
+  }; // BoardElement

@@ -10,9 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0437480b-ea16-40f7-aa14-f787a2c52a8e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/aws-android-sdk-cognito-2.6.18/aws-android-sdk-cognito-2.6.18.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aws-android-sdk-mobile-client-2.6.18/aws-android-sdk-mobile-client-2.6.18.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/aws-android-sdk-mobileanalytics-2.6.18/aws-android-sdk-mobileanalytics-2.6.18.iml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/javaCompile/classAnalysis.bin" />
@@ -22,16 +19,27 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/BoardCreation$State.class" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/BoardCreation$State.class" />
       <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/BoardCreation.class" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/BoardCreation.class" />
+      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/BoardElement.class" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/BoardElement.class" />
+      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/HashiGame$1.class" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/HashiGame$1.class" />
+      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/HashiGame$2.class" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/HashiGame$2.class" />
+      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/HashiGame.class" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/classes/debug/Island_and_Bridges/Hashi/HashiGame.class" />
       <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" />
-      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/BoardCreation$State.dex" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/BoardCreation$State.dex" />
       <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/BoardCreation.dex" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/BoardCreation.dex" />
+      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/BoardElement.dex" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/BoardElement.dex" />
+      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/HashiGame$1.dex" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/HashiGame$1.dex" />
+      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/HashiGame$2.dex" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/HashiGame$2.dex" />
+      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/HashiGame.dex" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexBuilder/debug/12/Island_and_Bridges/Hashi/HashiGame.dex" />
       <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexMerger/debug/14/classes.dex" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexMerger/debug/14/classes.dex" />
       <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexMerger/debug/__content__.json" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/intermediates/transforms/dexMerger/debug/__content__.json" />
       <change beforePath="$PROJECT_DIR$/Hashi_Bridges/build/outputs/apk/debug/Hashi_Bridges-debug.apk" afterPath="$PROJECT_DIR$/Hashi_Bridges/build/outputs/apk/debug/Hashi_Bridges-debug.apk" />
       <change beforePath="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardCreation.java" afterPath="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardCreation.java" />
+      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardElement.java" afterPath="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardElement.java" />
+      <change beforePath="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/HashiGame.java" afterPath="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/HashiGame.java" />
       <change beforePath="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/Land.java" afterPath="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/Land.java" />
+      <change beforePath="$PROJECT_DIR$/aws-android-sdk-cognito-2.6.18/aws-android-sdk-cognito-2.6.18.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/aws-android-sdk-mobile-client-2.6.18/aws-android-sdk-mobile-client-2.6.18.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/aws-android-sdk-mobileanalytics-2.6.18/aws-android-sdk-mobileanalytics-2.6.18.iml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,49 +79,46 @@
       <file leaf-file-name="BoardCreation.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardCreation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="298" column="75" lean-forward="false" selection-start-line="298" selection-start-column="75" selection-end-line="298" selection-end-column="75" />
+            <state relative-caret-position="279">
+              <caret line="414" column="0" lean-forward="false" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#16071#16072#0" expanded="true" />
-                <element signature="e#16111#16112#0" expanded="true" />
-                <element signature="e#16147#16148#0" expanded="true" />
-                <element signature="e#16177#16178#0" expanded="true" />
+                <element signature="e#16310#16311#0" expanded="true" />
+                <element signature="e#16350#16351#0" expanded="true" />
+                <element signature="e#16386#16387#0" expanded="true" />
+                <element signature="e#16416#16417#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Arrays.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/java/util/Arrays.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91500">
-              <caret line="3716" column="12" lean-forward="false" selection-start-line="3716" selection-start-column="12" selection-end-line="3716" selection-end-column="12" />
-              <folding>
-                <element signature="e#175383#175384#0" expanded="true" />
-                <element signature="e#175424#175425#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Land.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/Land.java">
+      <file leaf-file-name="LoggingPrintStream.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/com/android/internal/os/LoggingPrintStream.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
-              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+              <caret line="316" column="0" lean-forward="false" selection-start-line="316" selection-start-column="0" selection-end-line="316" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidPrintStream.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/com/android/internal/os/AndroidPrintStream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1280#1281#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivityThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/ActivityThread.java">
+      <file leaf-file-name="Log.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/util/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="2959" column="0" lean-forward="false" selection-start-line="2959" selection-start-column="0" selection-end-line="2959" selection-end-column="0" />
+            <state relative-caret-position="644">
+              <caret line="482" column="0" lean-forward="false" selection-start-line="482" selection-start-column="0" selection-end-line="482" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,19 +127,44 @@
       <file leaf-file-name="HashiGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/HashiGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="-625">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Path.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/graphics/Path.java">
+      <file leaf-file-name="Activity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11550">
-              <caret line="506" column="0" lean-forward="false" selection-start-line="506" selection-start-column="0" selection-end-line="506" selection-end-column="0" />
+            <state relative-caret-position="-17">
+              <caret line="851" column="0" lean-forward="false" selection-start-line="851" selection-start-column="0" selection-end-line="851" selection-end-column="0" />
+              <folding>
+                <element signature="e#40825#40826#0" expanded="true" />
+                <element signature="e#40855#40856#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/MapView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6408">
+              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Land.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/Land.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="568">
+              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,38 +172,8 @@
       <file leaf-file-name="BoardElement.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="28" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Object.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/java/lang/Object.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5250">
-              <caret line="240" column="0" lean-forward="false" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Looper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/os/Looper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3600">
-              <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/os/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2125">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="125">
+              <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -206,6 +206,8 @@
       <find>dir</find>
       <find>C</find>
       <find>nextSta</find>
+      <find>ds</find>
+      <find>state</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -2884,18 +2886,18 @@
         <option value="$PROJECT_DIR$/Hashi_Bridges/src/main/res/layout-v14/main.xml" />
         <option value="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/Search.java" />
         <option value="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/DFS.java" />
-        <option value="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/HashiGame.java" />
         <option value="$PROJECT_DIR$/Hashi_Bridges/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/Hashi_Bridges/build.gradle" />
-        <option value="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardElement.java" />
         <option value="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/Land.java" />
+        <option value="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardElement.java" />
+        <option value="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/HashiGame.java" />
         <option value="$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardCreation.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2644" />
-    <option name="y" value="-1670" />
+    <option name="x" value="-11" />
+    <option name="y" value="-1631" />
     <option name="width" value="1940" />
     <option name="height" value="1030" />
   </component>
@@ -2941,6 +2943,11 @@
             </path>
             <path>
               <item name="Islands-and-Bridge" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Hashi_Bridges" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="Islands-and-Bridge" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -2965,11 +2972,11 @@
     <property name="ExportApk.SignV1" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="Island_and_Bridges.Hashi" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\wteodorowicz\Islands-and-Bridge\Hashi_Bridges\src\main\res\layout" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Island_and_Bridges.Hashi" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -3167,7 +3174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534868153285</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="EmptyStackException- Algorithm Works for the first few searches.">
+      <created>1535022912128</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535022912128</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -3180,8 +3194,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2891" y="-1642" width="2902" height="1582" extended-state="6" />
-    <editor active="true" />
+    <frame x="-11" y="-1631" width="2902" height="1582" extended-state="6" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947975" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3189,11 +3202,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32938388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33453757" sideWeight="0.5014235" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875723" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875723" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33453757" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33453757" sideWeight="0.49857652" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -3223,11 +3236,40 @@
     <MESSAGE value="Added Algorithm Empty Stack error." />
     <MESSAGE value="Trying to read from null array error. - DFS Algorithm." />
     <MESSAGE value="Fixed up Directions&#10;Trying to read from null array error. - DFS Algorithm." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed up Directions&#10;Trying to read from null array error. - DFS Algorithm." />
+    <MESSAGE value="EmptyStackException- Algorithm Works for the first few searches." />
+    <option name="LAST_COMMIT_MESSAGE" value="EmptyStackException- Algorithm Works for the first few searches." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="91" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/Land.java</url>
+          <line>37</line>
+          <properties class="Island_and_Bridges.Hashi.Land" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardCreation.java</url>
+          <line>405</line>
+          <properties />
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardCreation.java</url>
+          <line>407</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardCreation.java</url>
+          <line>409</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="127" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Hashi_Bridges">
@@ -3245,39 +3287,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/HashiGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="130" column="44" lean-forward="false" selection-start-line="130" selection-start-column="44" selection-end-line="130" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/os/Binder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/Hashi_Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/Connection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -3292,10 +3301,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#16071#16072#0" expanded="true" />
-            <element signature="e#16111#16112#0" expanded="true" />
-            <element signature="e#16147#16148#0" expanded="true" />
-            <element signature="e#16177#16178#0" expanded="true" />
+            <element signature="e#16310#16311#0" expanded="true" />
+            <element signature="e#16350#16351#0" expanded="true" />
+            <element signature="e#16386#16387#0" expanded="true" />
+            <element signature="e#16416#16417#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3406,13 +3415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="7137" column="0" lean-forward="false" selection-start-line="7137" selection-start-column="0" selection-end-line="7137" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/local.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3445,6 +3447,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3522,14 +3525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/MapView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/Instrumentation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -3560,22 +3555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/os/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3600">
-          <caret line="166" column="0" lean-forward="false" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5250">
-          <caret line="240" column="0" lean-forward="false" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/jre/jre/lib/rt.jar!/java/util/Arrays.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -3591,61 +3570,127 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="240" column="0" lean-forward="false" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/graphics/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91500">
-          <caret line="3716" column="12" lean-forward="false" selection-start-line="3716" selection-start-column="12" selection-end-line="3716" selection-end-column="12" />
+        <state relative-caret-position="264">
+          <caret line="3210" column="24" lean-forward="false" selection-start-line="3210" selection-start-column="24" selection-end-line="3210" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/util/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="482" column="0" lean-forward="false" selection-start-line="482" selection-start-column="0" selection-end-line="482" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/com/android/internal/os/AndroidPrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding>
-            <element signature="e#175383#175384#0" expanded="true" />
-            <element signature="e#175424#175425#0" expanded="true" />
+            <element signature="e#1280#1281#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardElement.java">
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/com/android/internal/os/LoggingPrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="28" selection-end-column="3" />
+        <state relative-caret-position="254">
+          <caret line="316" column="0" lean-forward="false" selection-start-line="316" selection-start-column="0" selection-end-line="316" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="851" column="0" lean-forward="false" selection-start-line="851" selection-start-column="0" selection-end-line="851" selection-end-column="0" />
+          <folding>
+            <element signature="e#40825#40826#0" expanded="true" />
+            <element signature="e#40855#40856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/MapView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6408">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/HashiGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="-625">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="2959" column="0" lean-forward="false" selection-start-line="2959" selection-start-column="0" selection-end-line="2959" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/Land.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+        <state relative-caret-position="568">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-26/android/app/ActivityThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="2959" column="0" lean-forward="false" selection-start-line="2959" selection-start-column="0" selection-end-line="2959" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hashi_Bridges/src/main/java/Island_and_Bridges/Hashi/BoardCreation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="298" column="75" lean-forward="false" selection-start-line="298" selection-start-column="75" selection-end-line="298" selection-end-column="75" />
+        <state relative-caret-position="279">
+          <caret line="414" column="0" lean-forward="false" selection-start-line="414" selection-start-column="0" selection-end-line="414" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#16071#16072#0" expanded="true" />
-            <element signature="e#16111#16112#0" expanded="true" />
-            <element signature="e#16147#16148#0" expanded="true" />
-            <element signature="e#16177#16178#0" expanded="true" />
+            <element signature="e#16310#16311#0" expanded="true" />
+            <element signature="e#16350#16351#0" expanded="true" />
+            <element signature="e#16386#16387#0" expanded="true" />
+            <element signature="e#16416#16417#0" expanded="true" />
           </folding>
         </state>
       </provider>

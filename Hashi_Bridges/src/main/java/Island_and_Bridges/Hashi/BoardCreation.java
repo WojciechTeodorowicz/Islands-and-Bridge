@@ -22,7 +22,7 @@ import static junit.framework.Assert.*;
 
 public class BoardCreation {
   // This class member is used for random initialization purposes.
-  static private final Random random = new Random();
+//  static private final Random random = new Random();
   public int[][] debug_board_state_easy = new int[4][4];
 
   // The difficulty levels.
@@ -283,15 +283,15 @@ public class BoardCreation {
       }
 
 
-
       for (int row = 0; row < debug_board_state_easy.length; row++) {
           for (int column = 0; column < debug_board_state_easy[row].length; column++) {
               System.out.print(debug_board_state_easy[row][column] + " ");
           }
-            System.out.println();
+            System.out.println(debug_board_state_easy);
 
       }
-    this.search();
+      this.search();
+
       for (int row = 0; row < WIDTH_EASY; ++row) {
           for (int column = 0; column < WIDTH_EASY; ++column) {
 
@@ -375,12 +375,17 @@ public class BoardCreation {
             }
         }
     }
+
+
+    //! This functions uses the Utitlity class Land.java to recursively search through the 2-d array to find possible Connections
+
     void search(){
 
         Map<Point, List<Direction>> remainingOptions = new HashMap<>();
 
         Stack<Land> gameTree = new Stack<>();
         gameTree.push(new Land(debug_board_state_easy));
+        System.out.print("ID = Should be I@d3ba4e8 but is :  " + debug_board_state_easy + "\n" );
 
         while(true){
 //            if(gameTree.size() == 0) {
@@ -419,13 +424,13 @@ public class BoardCreation {
             }
 
             // if the node can no longer be expanded, we need to backtrack
-            if(ds.isEmpty() || ds.size() == 1){
+            if(ds.isEmpty()){
                 gameTree.pop();
                 remainingOptions.remove(new Point(row,column));
                 System.out.println("going back to previous decision");
                 continue;
             }
-            Direction dir = ds.remove(1);
+            Direction dir = ds.remove(0);
             System.out.println("connecting " + dir.name());
             remainingOptions.put(new Point(row,column), ds);
 

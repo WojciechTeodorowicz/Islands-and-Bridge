@@ -64,7 +64,6 @@ public class HashiGame extends Activity implements OnClickListener {
     }
   }
 
-
   @Override
   public Object onRetainNonConfigurationInstance() {
       return boardstate;

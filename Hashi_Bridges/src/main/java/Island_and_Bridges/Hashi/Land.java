@@ -76,7 +76,7 @@ public class Land {
         return out;
     }
 
-     public int[] nextIsland(int row, int column, Direction dir){
+    public int[] nextIsland(int row, int column, Direction dir){
         int[] tmp = next(row,column,dir);
         if(tmp == null)
             return null;
