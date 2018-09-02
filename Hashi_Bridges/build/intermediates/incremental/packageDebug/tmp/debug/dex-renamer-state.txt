@@ -1,4 +1,4 @@
-#Tue Aug 28 15:13:09 BST 2018
-base.0=C\:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+#Sun Sep 02 17:17:56 BST 2018
+base.0=C\:\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

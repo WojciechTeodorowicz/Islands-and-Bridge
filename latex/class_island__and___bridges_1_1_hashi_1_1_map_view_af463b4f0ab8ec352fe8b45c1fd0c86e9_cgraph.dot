@@ -1,0 +1,11 @@
+digraph "Island_and_Bridges.Hashi.MapView.onSizeChanged"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node8 [label="Island_and_Bridges.Hashi.\lMapView.onSizeChanged",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Island_and_Bridges.Hashi.\lMapView.Reset",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_map_view.html#a8a8dea4f3a9f81e4c2c68426ab5a0fda"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Island_and_Bridges.Hashi.\lBoardCreation.getCurrentState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_board_creation.html#a976ae525617a23880c54d0f588197b48"];
+}

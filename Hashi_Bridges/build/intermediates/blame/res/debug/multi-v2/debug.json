@@ -1,10 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "outputFile": "C:\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
             "map": [
                 {
-                    "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\values\\arrays.xml",
+                    "source": "C:\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "7,2,5,11,8,3,13,12,6,10",
+                        "startColumns": "3,4,3,3,3,4,3,3,3,3",
+                        "startOffsets": "345,106,241,491,391,164,594,541,293,437",
+                        "endColumns": "44,56,50,48,42,58,49,51,50,52",
+                        "endOffsets": "386,158,288,536,430,218,640,589,340,486"
+                    },
+                    "to": {
+                        "startLines": "11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "389,435,492,544,594,638,697,748,801,853",
+                        "endColumns": "45,56,51,49,43,58,50,52,51,53",
+                        "endOffsets": "430,487,539,589,633,692,743,796,848,902"
+                    }
+                },
+                {
+                    "source": "C:\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\values\\arrays.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "3",
@@ -23,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "3,5,2,4",
                         "startColumns": "0,4,0,4",
@@ -37,23 +54,6 @@
                         "startOffsets": "213,258,301,347",
                         "endColumns": "44,42,45,41",
                         "endOffsets": "253,296,342,384"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "7,2,5,11,8,3,13,12,6,10",
-                        "startColumns": "3,4,3,3,3,4,3,3,3,3",
-                        "startOffsets": "345,106,241,491,391,164,594,541,293,437",
-                        "endColumns": "44,56,50,48,42,58,49,51,50,52",
-                        "endOffsets": "386,158,288,536,430,218,640,589,340,486"
-                    },
-                    "to": {
-                        "startLines": "11,12,13,14,15,16,17,18,19,20",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "389,435,492,544,594,638,697,748,801,853",
-                        "endColumns": "45,56,51,49,43,58,50,52,51,53",
-                        "endOffsets": "430,487,539,589,633,692,743,796,848,902"
                     }
                 }
             ]

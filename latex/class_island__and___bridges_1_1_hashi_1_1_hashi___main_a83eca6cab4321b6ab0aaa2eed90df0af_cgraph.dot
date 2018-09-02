@@ -1,0 +1,12 @@
+digraph "Island_and_Bridges.Hashi.Hashi_Main.onClick"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node9 [label="Island_and_Bridges.Hashi.\lHashi_Main.onClick",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Island_and_Bridges.Hashi.\lHashi_Main.NewGame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_hashi___main.html#a5d0c1338ad67caa10dea9f59861f48e8"];
+  Node10 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Island_and_Bridges.Hashi.\lHashi_Main.About",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_hashi___main.html#a4801a68471b323f3351d360ad3800b38"];
+}

@@ -1,0 +1,29 @@
+\hypertarget{class_island__and___bridges_1_1_hashi_1_1_about_activity}{}\section{Island\+\_\+and\+\_\+\+Bridges.\+Hashi.\+About\+Activity Class Reference}
+\label{class_island__and___bridges_1_1_hashi_1_1_about_activity}\index{Island\+\_\+and\+\_\+\+Bridges.\+Hashi.\+About\+Activity@{Island\+\_\+and\+\_\+\+Bridges.\+Hashi.\+About\+Activity}}
+
+
+Inheritance diagram for Island\+\_\+and\+\_\+\+Bridges.\+Hashi.\+About\+Activity\+:
+% FIG 0
+
+
+Collaboration diagram for Island\+\_\+and\+\_\+\+Bridges.\+Hashi.\+About\+Activity\+:
+% FIG 1
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_island__and___bridges_1_1_hashi_1_1_about_activity_a1ce3e908ec03cfd70ed832bcea63df6c}{on\+Create}} (Bundle saved\+Instance\+State)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_island__and___bridges_1_1_hashi_1_1_about_activity_a1ce3e908ec03cfd70ed832bcea63df6c}\label{class_island__and___bridges_1_1_hashi_1_1_about_activity_a1ce3e908ec03cfd70ed832bcea63df6c}} 
+\index{Island\+\_\+and\+\_\+\+Bridges\+::\+Hashi\+::\+About\+Activity@{Island\+\_\+and\+\_\+\+Bridges\+::\+Hashi\+::\+About\+Activity}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!Island\+\_\+and\+\_\+\+Bridges\+::\+Hashi\+::\+About\+Activity@{Island\+\_\+and\+\_\+\+Bridges\+::\+Hashi\+::\+About\+Activity}}
+\subsubsection{\texorpdfstring{on\+Create()}{onCreate()}}
+{\footnotesize\ttfamily void Island\+\_\+and\+\_\+\+Bridges.\+Hashi.\+About\+Activity.\+on\+Create (\begin{DoxyParamCaption}\item[{Bundle}]{saved\+Instance\+State }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Hashi\+\_\+\+Bridges/src/main/java/\+Island\+\_\+and\+\_\+\+Bridges/\+Hashi/\mbox{\hyperlink{_about_activity_8java}{About\+Activity.\+java}}\end{DoxyCompactItemize}

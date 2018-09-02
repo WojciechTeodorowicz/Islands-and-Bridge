@@ -1,30 +1,30 @@
 [
     {
-        "merged": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\layout_about.xml.flat",
-        "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\layout\\about.xml"
+        "merged": "C:\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_yellowicon.png.flat",
+        "source": "C:\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\drawable-hdpi\\yellowicon.png"
     },
     {
-        "merged": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_icon.png.flat",
-        "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\drawable-ldpi\\icon.png"
+        "merged": "C:\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_icon.png.flat",
+        "source": "C:\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\drawable-mdpi\\icon.png"
     },
     {
-        "merged": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_greenicon.png.flat",
-        "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\drawable-hdpi\\greenicon.png"
+        "merged": "C:\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
+        "source": "C:\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\layout\\main.xml"
     },
     {
-        "merged": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_icon.png.flat",
-        "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\drawable-mdpi\\icon.png"
+        "merged": "C:\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_greenicon.png.flat",
+        "source": "C:\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\drawable-hdpi\\greenicon.png"
     },
     {
-        "merged": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\layout-v14_main.xml.flat",
-        "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\layout-v14\\main.xml"
+        "merged": "C:\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_icon.png.flat",
+        "source": "C:\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\drawable-ldpi\\icon.png"
     },
     {
-        "merged": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_yellowicon.png.flat",
-        "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\drawable-hdpi\\yellowicon.png"
+        "merged": "C:\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\layout-v14_main.xml.flat",
+        "source": "C:\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\layout-v14\\main.xml"
     },
     {
-        "merged": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
-        "source": "C:\\Users\\wteodorowicz\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\layout\\main.xml"
+        "merged": "C:\\Islands-and-Bridge\\Hashi_Bridges\\build\\intermediates\\res\\merged\\debug\\layout_about.xml.flat",
+        "source": "C:\\Islands-and-Bridge\\Hashi_Bridges\\src\\main\\res\\layout\\about.xml"
     }
 ]

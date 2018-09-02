@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="Island_and_Bridges.Hashi.test">
+    package="com.Island_and_Bridges.Hashi.test">
 
     <uses-sdk android:minSdkVersion="1" android:targetSdkVersion="1" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="Island_and_Bridges.Hashi"
+                     android:targetPackage="com.Island_and_Bridges.Hashi"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for Island_and_Bridges.Hashi"/>
+                     android:label="Tests for com.Island_and_Bridges.Hashi"/>
 </manifest>

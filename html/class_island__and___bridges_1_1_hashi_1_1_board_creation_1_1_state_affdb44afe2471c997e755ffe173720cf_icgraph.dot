@@ -1,0 +1,11 @@
+digraph "Island_and_Bridges.Hashi.BoardCreation.State.AddToBridgeCache"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="Island_and_Bridges.Hashi.\lBoardCreation.State.AddToBridgeCache",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Island_and_Bridges.Hashi.\lBoardCreation.TryAddNewBridge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_board_creation.html#ab8c1a9fe93d59d2aaa70519a17a3870a"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Island_and_Bridges.Hashi.\lMapView.onTouchEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_map_view.html#a594e4eda45768924edc668184aa73904"];
+}

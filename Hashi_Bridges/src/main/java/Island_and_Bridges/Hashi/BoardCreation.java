@@ -390,7 +390,12 @@ public class BoardCreation {
         while(true){
 //            if(gameTree.size() == 0) {
 //                gameTree.push(new Land(debug_board_state_easy));
-//            }
+//
+//      }
+            if(gameTree.isEmpty()){
+                System.out.println("no valid configuration found");
+                return;
+            }
             Land state = gameTree.peek();
 
             int[] p = state.lowestTodo();

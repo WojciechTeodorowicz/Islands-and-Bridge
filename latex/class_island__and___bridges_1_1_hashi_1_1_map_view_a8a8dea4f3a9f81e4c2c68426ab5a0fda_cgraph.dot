@@ -1,0 +1,9 @@
+digraph "Island_and_Bridges.Hashi.MapView.Reset"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node18 [label="Island_and_Bridges.Hashi.\lMapView.Reset",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="Island_and_Bridges.Hashi.\lBoardCreation.getCurrentState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_board_creation.html#a976ae525617a23880c54d0f588197b48"];
+}

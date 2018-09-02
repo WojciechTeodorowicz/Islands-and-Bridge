@@ -1,0 +1,13 @@
+digraph "Island_and_Bridges.Hashi.BoardCreation.TryAddNewBridge"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node12 [label="Island_and_Bridges.Hashi.\lBoardCreation.TryAddNewBridge",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="Island_and_Bridges.Hashi.\lBoardElement.GetCurrentCount",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_board_element.html#aa377c313875e3e490b0e52db9ebae89c"];
+  Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="Island_and_Bridges.Hashi.\lBoardCreation.getCurrentState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_board_creation.html#a976ae525617a23880c54d0f588197b48"];
+  Node12 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
+  Node15 [label="Island_and_Bridges.Hashi.\lBoardCreation.State.AddToBridgeCache",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_board_creation_1_1_state.html#affdb44afe2471c997e755ffe173720cf"];
+}

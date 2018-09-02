@@ -1,0 +1,11 @@
+digraph "Island_and_Bridges.Hashi.Land.nextIsland"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node23 [label="Island_and_Bridges.Hashi.\lLand.nextIsland",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node23 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="Island_and_Bridges.Hashi.\lLand.canBuildBridge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_land.html#a8d37542dbb0c90853d6f2e2b4ddfb63f"];
+  Node24 -> Node25 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node25 [label="Island_and_Bridges.Hashi.\lLand.connect",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_island__and___bridges_1_1_hashi_1_1_land.html#a053ead3b743dce070d270efd9ab39de7"];
+}
